@@ -14,7 +14,7 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
     return gulp.src('./src/styles/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./dist/styles'));
+        .pipe(gulp.dest('./docs/styles'));
 });
 
 
@@ -26,7 +26,7 @@ gulp.task('html', function() {
             removeComments: true,
             collapseWhitespace: true
         }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('docs'))
         .pipe(sync.stream());
 });
 
@@ -41,7 +41,7 @@ gulp.task('styles', function() {
             require('postcss-csso')
         ]))
         .pipe(replace(/\.\.\//g, ''))
-        .pipe(gulp.dest('dist/styles'))
+        .pipe(gulp.dest('docs/styles'))
         .pipe(sync.stream());
 });
 
@@ -53,7 +53,7 @@ gulp.task('scripts', function() {
             presets: ['@babel/preset-env']
         }))
         .pipe(terser())
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('docs'))
         .pipe(sync.stream());
 });
 
@@ -67,7 +67,7 @@ gulp.task('copy', function() {
         ], {
             base: 'src'
         })
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('docs'))
         .pipe(sync.stream({
             once: true
         }));
@@ -76,14 +76,14 @@ gulp.task('copy', function() {
 // Paths
 
 gulp.task('paths', function() {
-    return gulp.src('dist/*.html')
+    return gulp.src('docs/*.html')
         .pipe(replace(
             /(<link rel="stylesheet" href=")styles\/(index.css">)/, '$1$2'
         ))
         .pipe(replace(
             /(<script src=")scripts\/(index.js">)/, '$1$2'
         ))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('docs'));
 });
 
 // Server
@@ -93,7 +93,7 @@ gulp.task('server', function() {
         ui: false,
         notify: false,
         server: {
-            baseDir: 'dist'
+            baseDir: 'docs'
         }
     });
 });
