@@ -1,0 +1,41 @@
+/* -- Bootstrap -- */
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+/* -- Общее-- */
+@import './variables.scss';
+@import './global.scss';
+@import './fonts.scss';
+
+@import './blocks/title.scss';
+@import './blocks/text.scss';
+@import './blocks/container.scss';
+
+/* --Сайт--*/
+@import './blocks/about.scss';
+@import './blocks/work.scss';
+@import './blocks/greetings.scss';
+@import './blocks/experience.scss';
+@import './blocks/portfolio.scss';
+@import './blocks/case.scss';
+@import './blocks/tech.scss';
+@import './blocks/footer.scss';
+
+
+/* -- Old -- */
+/*
+@import './blocks/logo.scss';
+@import './blocks/menu.scss';
+@import './blocks/description.scss';
+@import './blocks/header.scss';
+@import './blocks/advantages.scss';
+@import './blocks/advantage.scss';
+@import './blocks/skills.scss';
+@import './blocks/skill.scss';
+
+@import './blocks/gallery.scss';
+@import './blocks/partners.scss';
+@import './blocks/offer.scss';
+
+*/
