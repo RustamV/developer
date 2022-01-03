@@ -5,3 +5,4 @@ export { default as Experience } from "./Experience";
 export { default as Profile } from "./Profile";
 export { default as Skills } from "./Skills";
 export { default as SectionTitle } from "./SectionTitle";
+export { default as Timeline } from "./Timeline";

@@ -1,0 +1,17 @@
+.header {
+    strong {
+        color: #518145;
+    }
+}
+
+.list:global(.ant-list-sm) {
+    :global {
+        .ant-list-item {
+            padding: 4px 16px;
+        }
+    }
+}
+
+.timeitem {
+    margin-bottom: 16px;
+}
