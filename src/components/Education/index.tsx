@@ -2,13 +2,7 @@ import { SectionTitle, Timeline } from "..";
 import { FileDoneOutlined } from "@ant-design/icons";
 
 const Education: React.FC = () => {
-    const data = [
-        "Racing car sprays burning fuel into crowd.",
-        "Japanese princess to wed commoner.",
-        "Australian walks 100km after outback crash.",
-        "Man charged over missing wedding girl.",
-        "Los Angeles battles huge wildfires."
-    ];
+    const data = ["Факультет информатики и робототехники", "Специальность - Информатика и вычислительная техника"];
 
     return (
         <div>

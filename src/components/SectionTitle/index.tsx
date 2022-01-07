@@ -10,7 +10,7 @@ const SectionTitle: React.FC<Props> = ({ title, icon }) => {
     return (
         <Space>
             <Typography.Title level={3} className={styles.title}>
-                {icon} {title}
+                <span>{icon}</span> {title}
             </Typography.Title>
         </Space>
     );

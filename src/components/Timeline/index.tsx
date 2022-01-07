@@ -11,10 +11,10 @@ interface Props {
 const Timeline: React.FC<Props> = ({ date, title, subtitle, data }) => {
     return (
         <Row className={styles.timeitem}>
-            <Col xs={8}>
+            <Col xs={24} md={8}>
                 <Typography.Text type="secondary">{date}</Typography.Text>
             </Col>
-            <Col xs={16}>
+            <Col xs={24} md={16}>
                 <div className={styles.header}>
                     <Typography.Title level={4} className={styles.company}>
                         <strong>{title},</strong> {subtitle}

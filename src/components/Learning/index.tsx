@@ -3,22 +3,12 @@ import { CodeOutlined, RightOutlined } from "@ant-design/icons";
 import { List, Typography } from "antd";
 import styles from "./index.module.scss";
 
-const Skills: React.FC = () => {
-    const data = [
-        "React",
-        "Redux, Redux-toolkit",
-        "Javascript ES6+",
-        "HTML",
-        "CSS",
-        "SCSS",
-        "Git",
-        "Ant Design",
-        "CSS-modules"
-    ];
+const Learning: React.FC = () => {
+    const data = ["TypeScript", "Material UI", "GraphQL"];
 
     return (
         <div>
-            <SectionTitle title="Навыки" icon={<CodeOutlined />} />
+            <SectionTitle title="На изучении" icon={<CodeOutlined />} />
             <List
                 className={styles.list}
                 split={false}
@@ -37,4 +27,4 @@ const Skills: React.FC = () => {
     );
 };
 
-export default Skills;
+export default Learning;

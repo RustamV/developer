@@ -1,0 +1,15 @@
+.list:global(.ant-list-sm) {
+    margin-bottom: 24px;
+
+    :global {
+        .ant-list-item {
+            padding: 4px 16px;
+        }
+
+        .ant-typography {
+            gap: 4px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
